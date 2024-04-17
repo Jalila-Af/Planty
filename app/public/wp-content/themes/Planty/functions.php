@@ -21,7 +21,7 @@ function prefix_add_menu_item ( $items, $args ) {
             $items = substr($items, $item_pos);
         }
         $items_array[] = $items;
-        array_splice($items_array, 1, 0, '<li class="menu-item"><a class="menu-admin" href="'. get_site_url() .'/planty2.local/admin/">Admin</a></li>'); 
+        array_splice($items_array, 1, 0, '<li class="menu-item"><a class="menu-admin" href="'. get_site_url() .'/wp-admin/">Admin</a></li>'); 
         $items = implode('', $items_array);   
     }
    return $items;    
