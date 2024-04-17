@@ -1,0 +1,609 @@
+/* __________ GENERAL ___________*/
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700&display=swap');
+
+* {
+  font-family: 'Syne'!important;
+}
+
+/* Suppression du méta "modifier" en bas de  page */
+.post-meta-wrapper.post-meta-edit-link-wrapper {
+    display: none;
+  }
+
+/* Réglage du footer */
+.footer-top.has-footer-menu {
+  padding: 10px 0 0 0;
+  flex-direction: column;
+  justify-content: center;
+  }
+
+.footer-menu a {
+  color: #000 !important;
+  text-decoration: none !important;
+  font-weight: 400;
+  }
+
+/* Admin masqué sur le footer*/
+.footer-menu li .menu-admin {
+  display: none;
+  }
+
+/* __________ HEADER - NAV ___________ */
+ 
+.header-inner.section-inner {
+  max-width: 100%;
+  margin: 0; 
+  padding: 0;
+  width: 100%;
+  }
+ 
+.site-logo img {  
+  width: 45%;
+  padding: 0px 30px;
+  }
+
+ul.primary-menu {
+  margin: 0;
+  }
+
+li.menu-item-42, li.menu-item-41,li.menu-item {
+  margin: 0;
+  padding: 20px;
+  }
+
+li.menu-item-42 a {
+  color: #000 !important;
+  text-align: center;
+  text-decoration: none !important;
+  }
+ 
+li.menu-item-42 a:hover {
+  font-weight:bold;
+  text-decoration: none;
+  }
+ 
+li.menu-item-41  {
+  background-color: #E0B9B4;
+  }
+
+li.menu-item-41:hover {
+  background-color: #C02E44 !important;
+  }
+
+li.menu-item-41 a {
+  color: #ffff !important;
+  text-align: center;
+  text-decoration: none !important;
+  }
+
+a.menu-admin {
+  color: #000 !important;
+  text-decoration: none !important;
+  }
+
+li.menu-item > a.menu-admin :hover {
+  font-weight: bold;
+}
+
+/* __________ PAGE ACCUEIL___________ */
+ 
+/* REGLAGE GENERAL PAGE D'ACCUEIL */
+
+/* Suppression marges zone titre et image principale de la page d'accueil*/
+section.wp-block-uagb-container.uagb-block-c9dbf7fc.alignfull.uagb-is-root-container {
+  padding: 0px !important;
+  margin: 0px !important;
+  }
+
+/* Suppression marges zone galerie page d'accueil */
+.wp-block-uagb-container.uagb-block-d4869641.alignfull.uagb-is-root-container {
+  padding: 0px !important;
+  margin: 0px !important;
+  }
+
+/* Suppression marges bas de page-cannettes page d'accueil*/
+.wp-block-uagb-container.uagb-block-3e88c94d.alignfull.uagb-is-root-container {
+  padding: 0px !important;
+  margin: 0px !important;
+  }
+
+.wp-block-uagb-container.uagb-block-6672e2e7 {
+  padding: 0px !important;
+  margin: 0px !important;
+  }
+
+/* Suppression marges du footer */
+.footer-nav-widgets-wrapper.header-footer-group {
+  padding: 0 !important;
+  margin: 0 !important;
+  }
+
+/* Suppression de  l'apparition du titre de la page d'accueil */
+.singular .entry-header {
+  display: none;
+  }
+/* FIN DU REGLAGE GENERAL PAGE D'ACCUEIL */
+
+.entry-content h1 {
+  font-size: 48px !important;
+  line-height: 45px;
+  text-align: center !important;
+  text-transform: uppercase;
+  color: #3B8E46 !important;
+  font-weight:bolder;
+  }
+
+/* Suppression des marges intérieur autour du titre et de la photo de la page d'accueil*/
+.wp-block-uagb-container.uagb-block-dfe5b2e8 {
+  padding: 0;
+  }
+
+/* Réglage du block image de la page d'accueil*/
+img.wp-image-239 {
+  width: 100% ;
+  height: 600px !important;
+  object-fit:contain ;
+  }
+ 
+/*Premier bandeau avec courbure sur les coins du bas*/
+.wp-block-uagb-container.uagb-block-c9dbf7fc {
+  position: relative;
+  background: #ECE2DA;
+  border-bottom-left-radius: 150px 50px;
+  border-bottom-right-radius: 150px 50px;
+  }
+
+/* 2ème partie de la page d'accueil*/
+/* Supression marges intérieur et extérieur autour de la zone titre et paragraphe*/
+.wp-block-uagb-container.uagb-block-fae667b5.alignfull.uagb-is-root-container {
+  padding: 0;
+  margin: 0;
+  }
+
+h3.wp-block-heading.has-text-align-center.has-primary-color.has-text-color.has-link-color.wp-elements-5d061393f461646edd180bf9e3cfcd08 {
+  font-size: 40px;
+  text-align: center;
+  color: #3B8E46 !important;
+  font-weight: 800;
+  }
+
+p.has-text-align-center {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  }
+
+/*3ème partie de la page d'accueil*/
+.wp-block-uagb-container.uagb-block-62a9dfaa {
+  padding: 50px 0;
+  }
+
+.wp-block-gallery.has-nested-images.columns-2.is-cropped.wp-block-gallery-1.is-layout-flex.wp-block-gallery-is-layout-flex {
+ gap: 16px;
+ }
+
+/*Second bandeau avec une légère coubure*/
+.wp-block-uagb-container.uagb-block-62a9dfaa {
+  position: relative;
+  background: #ECE2DA;
+  border-bottom-left-radius: 150px 20px;
+  border-bottom-right-radius: 150px 2dvh;
+  }
+
+h2.wp-block-heading.has-text-align-center.has-primary-color.has-text-color.has-link-color.wp-elements-c4490a1824d184c59678f6f7c4b6636a {
+  font-size: 48px;
+  font-weight:800;
+  color: #D2776A !important;
+  text-transform: uppercase !important;
+  text-align: center;
+  margin: 0;
+  }
+
+
+/* Réglage du bouton */
+.wp-block-button.is-style-fill {
+  background-color: #E0B9B4;
+  width: 200px;
+  height: 55px;
+  border-radius: 5%;
+  }
+
+.wp-block-button.is-style-fill a:hover {
+  background-color:#C02E44;
+  width: 200px;
+  height: 55px;
+  border-radius: 5%;
+  }
+
+.wp-block-button__link.has-text-align-center.wp-element-button {
+  color: #ffff;
+  background-color: #E0B9B4;
+  font-size: 17px;
+  font-weight: 400;
+  width: 200px;
+  height: 55px;
+  text-decoration: none;
+  border-radius: 5%;
+  }
+/* Fin réglage bouton */
+
+/*4ème partie de la page d'accueil*/
+/*Marges autour de la partie avis*/
+.wp-block-uagb-container.uagb-block-f9d26705.alignfull.uagb-is-root-container{
+  margin: 0;
+  padding: 0;
+  }
+
+h2.wp-block-heading.has-text-align-center.has-primary-color.has-text-color.has-link-color.wp-elements-785ac47cc8a840582eb2921d5ed019f1 {
+  font-size: 38px !important;
+  line-height: 36px;
+  color: #3B8E46 !important;
+  font-weight:bolder;
+  text-align: center;
+  text-transform: uppercase !important;
+  padding-top: 40px;
+  }
+
+/* __________ PAGE NOUS RENCONTRER___________ */
+
+/* REGLAGE GENERAL */
+/* marges block*/
+.wp-block-uagb-container.uagb-block-3d4f13af.alignfull.uagb-is-root-container {
+  margin: 0;
+  padding: 0;
+  }
+
+.wp-block-uagb-container.uagb-block-646961d3 {
+  padding: 0 !important;
+  margin: 0 !important;
+  }
+
+.wp-block-uagb-container.uagb-block-1448abaf {
+  padding: 0 !important;
+  margin: 0 !important;
+  }
+ 
+.wp-block-uagb-container.uagb-block-840d8bb4 {
+  padding-bottom: 50px;
+  }
+
+.wp-block-uagb-container.uagb-block-61882921.alignfull.uagb-is-root-container {
+  padding: 0 !important;
+  margin: 0 !important;
+  }
+/* FIN DU REGLAGE GENERAL */
+
+.wp-block-uagb-container.uagb-block-3d4f13af.alignfull.uagb-is-root-container {
+  position: relative;
+  background: #ECE2DA;
+  border-bottom-left-radius: 150px 50px;
+  border-bottom-right-radius: 150px 50px;
+  }
+
+h2.wp-block-heading.alignfull.has-text-align-center.has-primary-color.has-text-color.has-link-color.wp-elements-d4a33d4d2fe049101dedb380a57e3f48 {
+  color: #D2776A;
+  text-transform: uppercase !important;
+  font-size: 48px;
+  font-weight:800;
+  line-height: 45px;
+  letter-spacing:6px;
+  }
+
+/* Position de la première image */
+.wp-block-uagb-container.uagb-block-c05bd59f {
+  width: 145px;
+  height: 100px;
+  position: relative;
+  top: 100px;
+  left: -190px;
+  }
+
+.wp-block-uagb-container.uagb-block-73dc47f8 {
+  padding: 0;
+  }
+
+.wp-block-image.size-full {
+  padding-bottom: 0px !important;
+  }
+
+p.has-text-align-left {
+  font-size: 20px;
+  font-weight:400;
+  line-height:24px;
+  text-align: center;
+  }
+
+img.wp-image-106 {
+  width: 145px !important;
+  height: 150px !important;
+  float:inline-start;
+  margin-top: 150 !important;  
+  }
+
+img.wp-image-44 {
+  width: 190px;
+  height: 220px;
+  float: right !important;
+  }
+
+figure.wp-block-image.size-full {
+  margin: 0 !important;
+  padding: 0 !important;
+  }
+
+ /* Marge block équipe */
+.wp-block-columns.is-layout-flex.wp-container-core-columns-layout-2.wp-block-columns-is-layout-flex {
+  margin-bottom: 0;
+  margin-top: 0;
+  }
+
+.wp-block-uagb-container.uagb-block-064035ff.alignfull.uagb-is-root-container {
+  padding-right:30px;
+  margin: 0;
+  position: relative;
+  top:-70px;
+  height: 70px;
+  }
+
+ /*bouton formulaire*/
+ 
+.ff-btn.ff-btn-submit.ff-btn-lg.ff_btn_style {
+  background-color: #E0B9B4;
+  text-transform: capitalize;
+  border-radius: 5px;
+  }
+
+.wpcf7-form-control.wpcf7-submit.has-spinner {
+  padding: 20px 50px;
+  position: relative;
+  top: 30px;
+  left: 120px
+  }
+
+.ImageFormulaireRenconter {
+  position: relative;
+  bottom: 210px;
+  left: -88px;
+  }
+
+/* Dernière case du formulaire */
+.wpcf7-form-control-wrap {
+  position:relative;
+  z-index: 1;
+  }
+
+/* Cannettes du bas */
+.wp-block-image.alignfull.size-large {
+  margin-bottom: 0;
+  }
+
+/* __________ PAGE COMMANDER ___________ */
+
+/* Galerie de commande*/
+#gallery {
+  width: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  margin: auto;
+  }
+ 
+#picture {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+  }
+
+#picture li {
+  padding: 0;
+  margin: 0;
+  }
+
+#picture li a img {
+  display: block;
+  border: none;
+  }
+
+#picture li a {
+  display: block;
+  }
+
+.post-38.page.type-page.status-publish.hentry {
+  background-color: #3B8E46;
+  padding: 0 !important;
+  margin: 0 !important;
+  }
+
+h1.commander {
+  color: #fff !important;
+  font-weight: 800;
+  margin: 0;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  }
+
+h3.commande {
+  color: #fff;
+  font-weight: 700;
+  }
+
+/* Case de commande*/
+.wpcf7-form-control.wpcf7-number.wpcf7-validates-as-number {
+  width: 39px;
+  height:56px;
+  padding:0;
+  text-align: center;
+  position: relative;
+  left: 115px;
+  }
+
+.wp-block-uagb-container.uagb-block-6649158b.alignfull.uagb-is-root-container {
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  }
+
+.wp-block-image.alignfull.size-large {
+  margin: 0;
+  }
+
+/* Ligne de séparation formulaire*/
+.aSeparator {
+  border-top:1px solid #ffffff;
+  height:1px;
+  margin:0;
+  }
+
+.aVerticalSeparator {
+  border-right: 1px solid #ffffffff !important;
+  position:relative;
+  left: -200px;
+  }
+
+/* Zone de formulaire */
+#formulaire-responsive { 
+	max-width:750px;
+  margin:0 auto;
+  width:100%;
+  }
+
+.rang-form {
+	width: auto;
+  }
+
+.demi-colonne, .colonne {
+	float: left;
+	position: relative;
+	width:100%;
+  /*
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+  */
+  }
+
+.demi-colonne {
+  padding: 0 50px 0 0;
+  }
+/*
+.order:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+*/
+
+/**---------------- Media query ----------------**/
+@media only screen and (min-width: 48em) { 
+	.demi-colonne {
+		width: 50%;
+	  }
+  }
+
+.wpcf7 input[type="text"], .wpcf7 input[type="email"], .wpcf7 textarea {
+	width: 100%;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+  /*
+	-webkit-box-sizing: border-box;
+	 -moz-box-sizing: border-box;
+	      box-sizing: border-box
+        */
+  }
+
+.wpcf7 input[type="text"]:focus{
+	background: #fff;
+  }
+
+/*
+span.wpcf7-not-valid-tip{
+	text-shadow: none;
+	font-size: 12px;
+	color: #fff;
+	background: #ff0000;
+	padding: 5px;
+}
+div.wpcf7-validation-errors { 
+	text-shadow: none;
+	border: transparent;
+	background: #ff0000;
+	padding: 5px;
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	font-size: 12px;
+}
+div.wpcf7-mail-sent-ok{
+	text-align: center;
+	text-shadow: none;
+	padding: 5px;
+	font-size: 12px;
+	background:#E0B9B4;
+	border-color:#E0B9B4;
+	color: #fff;
+	margin: 0;
+}
+*/
+
+.demi-colonne {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0 50px 0 0;
+  }
+
+.colonne {
+  text-align: center;
+  }
+
+.entry-header.has-text-align-center.header-footer-group {
+  padding: 0;
+  }
+
+.footer-nav-widgets-wrapper.header-footer-group {
+  border: 0;
+  }
+
+h4.info {
+  position: relative;
+  top: 85px;
+  left: 220px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  }
+
+h4.adresse {
+  position: relative;
+  left:600px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  color:#ffffff
+  }
+
+/* Bouton Commander*/
+.colonne {
+  padding: 30px 0 50px 0;
+  position: relative;
+  right:140px;
+  }
+
+.wpcf7-submit{
+  color: #fff;
+  text-decoration: none !important;
+  background-color:#E0B9B4 !important; 
+  text-transform:none !important;
+  border-radius: 5px !important; 
+  }
+
+.wpcf7-submit:hover{
+	background:#C02E44 !important;
+  color: #ffffff;
+  }
+
