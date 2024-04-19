@@ -1,4 +1,4 @@
-/* __________ GENERAL ___________*/
+/*** __________ GENERAL ___________ ***/
 
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700&display=swap');
 
@@ -14,7 +14,7 @@
 /* Réglage du footer */
 .footer-top.has-footer-menu {
   padding: 10px 0 0 0;
-  flex-direction: column;
+  display: flex;
   justify-content: center;
   }
 
@@ -86,9 +86,9 @@ li.menu-item > a.menu-admin :hover {
   font-weight: bold;
 }
 
-/* __________ PAGE ACCUEIL___________ */
+/*** __________ PAGE ACCUEIL___________ ***/
  
-/* REGLAGE GENERAL PAGE D'ACCUEIL */
+/*** REGLAGE GENERAL PAGE D'ACCUEIL ***/
 
 /* Suppression marges zone titre et image principale de la page d'accueil*/
 section.wp-block-uagb-container.uagb-block-c9dbf7fc.alignfull.uagb-is-root-container {
@@ -123,10 +123,10 @@ section.wp-block-uagb-container.uagb-block-c9dbf7fc.alignfull.uagb-is-root-conta
 .singular .entry-header {
   display: none;
   }
-/* FIN DU REGLAGE GENERAL PAGE D'ACCUEIL */
+/*** FIN DU REGLAGE GENERAL PAGE D'ACCUEIL ***/
 
 .entry-content h1 {
-  font-size: 48px !important;
+  font-size: 44px !important;
   line-height: 45px;
   text-align: center !important;
   text-transform: uppercase;
@@ -154,7 +154,8 @@ img.wp-image-239 {
   border-bottom-right-radius: 150px 50px;
   }
 
-/* 2ème partie de la page d'accueil*/
+/*** 2ème partie de la page d'accueil ***/
+
 /* Supression marges intérieur et extérieur autour de la zone titre et paragraphe*/
 .wp-block-uagb-container.uagb-block-fae667b5.alignfull.uagb-is-root-container {
   padding: 0;
@@ -174,7 +175,8 @@ p.has-text-align-center {
   line-height: 24px;
   }
 
-/*3ème partie de la page d'accueil*/
+/*** 3ème partie de la page d'accueil ***/
+
 .wp-block-uagb-container.uagb-block-62a9dfaa {
   padding: 50px 0;
   }
@@ -228,7 +230,8 @@ h2.wp-block-heading.has-text-align-center.has-primary-color.has-text-color.has-l
   }
 /* Fin réglage bouton */
 
-/*4ème partie de la page d'accueil*/
+/*** 4ème partie de la page d'accueil ***/
+
 /*Marges autour de la partie avis*/
 .wp-block-uagb-container.uagb-block-f9d26705.alignfull.uagb-is-root-container{
   margin: 0;
@@ -245,9 +248,10 @@ h2.wp-block-heading.has-text-align-center.has-primary-color.has-text-color.has-l
   padding-top: 40px;
   }
 
-/* __________ PAGE NOUS RENCONTRER___________ */
+/*** __________ PAGE NOUS RENCONTRER___________ ***/
 
-/* REGLAGE GENERAL */
+/*** REGLAGE GENERAL ***/
+
 /* marges block*/
 .wp-block-uagb-container.uagb-block-3d4f13af.alignfull.uagb-is-root-container {
   margin: 0;
@@ -272,7 +276,7 @@ h2.wp-block-heading.has-text-align-center.has-primary-color.has-text-color.has-l
   padding: 0 !important;
   margin: 0 !important;
   }
-/* FIN DU REGLAGE GENERAL */
+/*** FIN DU REGLAGE GENERAL ***/
 
 .wp-block-uagb-container.uagb-block-3d4f13af.alignfull.uagb-is-root-container {
   position: relative;
@@ -382,10 +386,24 @@ figure.wp-block-image.size-full {
   margin-bottom: 0;
   }
 
-/* __________ PAGE COMMANDER ___________ */
+/*** __________ PAGE COMMANDER ___________ ***/
 
+#formulaire-responsive { 
+	max-width:950px;
+  margin: 0 auto;
+  width:100%;
+  }
 
-/* Galerie de commande*/
+.wp-block-uagb-container.uagb-block-6649158b.alignfull.uagb-is-root-container {
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  }
+
+.wp-block-image.alignfull.size-large {
+  margin: 0;
+  }
+
 #gallery {
   width: auto;
   overflow: hidden;
@@ -395,12 +413,12 @@ figure.wp-block-image.size-full {
   }
  
 #picture {
-  list-style: none;
+ list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: space-between;
-  gap: 35px;
+  gap: 20px;
   }
 
 #picture li {
@@ -423,12 +441,13 @@ figure.wp-block-image.size-full {
   margin: 0 !important;
   }
 
-h1.commander {
+h2.commander {
   color: #fff !important;
   font-weight: 800;
   margin: 0;
   padding-bottom: 50px;
   padding-top: 50px;
+  text-align: center;
   }
 
 h3.commande {
@@ -438,73 +457,36 @@ h3.commande {
 
 /* Case de commande*/
 .wpcf7-form-control.wpcf7-number.wpcf7-validates-as-number {
-  width: 39px;
-  height:56px;
-  padding:0;
-  text-align: center;
-  position: relative;
-  left: 115px;
+  width: 50px;
+  height: 50px;
   }
 
-.wp-block-uagb-container.uagb-block-6649158b.alignfull.uagb-is-root-container {
-  margin: 0;
-  padding: 0;
-  object-fit: cover;
+/* Positionnement case nombre */
+.wpcf7-form-control-wrap {
+  display: flex;
+  justify-content:center;
   }
-
-.wp-block-image.alignfull.size-large {
-  margin: 0;
-  }
-
-/* Ligne de séparation formulaire*/
+  
+/* Ligne de séparation*/
 .aSeparator {
   border-top:1px solid #ffffff;
   height:1px;
   margin:0;
   }
 
-.aVerticalSeparator {
-  border-right: 1px solid #ffffffff !important;
-  position:relative;
-  left: -200px;
-  }
-
-/* Zone de formulaire */
-#formulaire-responsive { 
-	max-width:750px;
-  margin:0 auto;
-  width:100%;
-  }
-
-.rang-form {
-	width: auto;
-  }
-
-.demi-colonne, .colonne {
-	float: left;
-	position: relative;
-	width:100%;
-	-webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box
+.rang-form1, .rang-form1  {
+	width: auto !important;
   }
 
 .demi-colonne {
   padding: 0 50px 0 0;
-  }
-
+  color: #fff;
+    }
+  
 .order:after {
 	content: "";
 	display: table;
 	clear: both;
-}
-
-
-/**---------------- Media query ----------------**/
-@media only screen and (min-width: 48em) { 
-	.demi-colonne {
-		width: 50%;
-	  }
   }
 
 .wpcf7 input[type="text"], .wpcf7 input[type="email"], .wpcf7 textarea {
@@ -549,17 +531,6 @@ div.wpcf7-mail-sent-ok{
 	margin: 0;
 }
 
-.demi-colonne {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 400;
-  padding: 0 50px 0 0;
-  }
-
-.colonne {
-  text-align: center;
-  }
-
 .entry-header.has-text-align-center.header-footer-group {
   padding: 0;
   }
@@ -568,34 +539,27 @@ div.wpcf7-mail-sent-ok{
   border: 0;
   }
 
-h4.info {
-  position: relative;
-  top: 85px;
-  left: 220px;
-  font-size: 30px;
-  font-weight: 700;
+h4 {
   color: #ffffff;
-  }
-
-h4.adresse {
-  position: relative;
-  left:600px;
-  font-size: 30px;
-  font-weight: 700;
-  color: #ffffff;
-  color:#ffffff
   }
 
 /* Bouton Commander*/
-.colonne {
-  padding: 30px 0 50px 0;
-  position: relative;
-  right:140px;
-  }
 
+.colonne {
+  padding: 0 0 40px 0;
+  text-align: center;
+  position: relative;
+  right:150px;
+  width:100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+  }
+ 
 .wpcf7-submit{
   color: #fff;
   text-decoration: none !important;
+  text-align: center;
   background-color:#E0B9B4 !important; 
   text-transform:none !important;
   border-radius: 5px !important; 
@@ -604,5 +568,45 @@ h4.adresse {
 .wpcf7-submit:hover{
 	background:#C02E44 !important;
   color: #ffffff;
+  text-align: center;
   }
 
+
+/***  ___________  Media query  ___________  ***/
+
+
+/*** __________ TABLETTE __________ ***/
+
+@media only screen and (min-width: 768px) { 
+	.demi-colonne {
+		width: 100%;
+  	  }
+  }
+
+/*** __________ DESKTOP __________ ***/
+
+  @media only screen and (min-width: 1280px) { 
+    .rang-form2 {
+      width: auto;
+      height: 350px;
+      position: relative;
+      left: 500px;
+      top:-428px;
+    }
+
+    .rang-form1 {
+      width: auto;
+      position: static;
+      z-index: 1;
+    }
+    
+    .demi-colonne {
+      width: 50%;
+      }
+    }
+    .colonne {
+      width: 100%;
+      position: relative;
+      right: 620px;
+      }
+   
